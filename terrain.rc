@@ -1,0 +1,1070 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\terrain.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\terrain.ico"
+IDR_TERRAITYPE          ICON    DISCARDABLE     "res\\terrainDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_SURFFILL            BITMAP  DISCARDABLE     "res\\surffill.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_ZOOM_TERRAIN_IN
+    BUTTON      ID_ZOOM_TERRAIN_OUT
+    BUTTON      ID_NEW_GRID
+    BUTTON      ID_ADD_NEW_POLYGON
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About terrain...",           ID_APP_ABOUT
+    END
+END
+
+IDR_TERRAITYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Load Into Current...",        ID_FILE_LOAD_INTO_CURRENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Delete",                      ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Offset...",                   ID_EDIT_OFFSET
+        MENUITEM "Generate surface types",      ID_EDIT_GENERATE_TYPEMAPS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Grid"
+    BEGIN
+        MENUITEM "Excavate options...",         ID_EXCAVATE
+        MENUITEM "Add New Grid",                ID_NEW_GRID
+        MENUITEM "Double Height",               ID_GRIDDOUBLEHEIGHT
+        MENUITEM "Halve Height",                ID_GRIDHALVEHEIGHT
+    END
+    POPUP "O&bject"
+    BEGIN
+        MENUITEM "Select By Attribute...",      ID_OBJECT_SELECTBYATTR
+        MENUITEM "Planting Parameters....",     ID_OBJECT_PLANTPARAMETERS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About terrain...",           ID_APP_ABOUT
+    END
+    MENUITEM "",                            65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Shreditor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Shreditor - Terrain Editor for Soul Ride - Version 1.0",
+                    IDC_STATIC,40,10,119,15,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998 Slingshot",IDC_STATIC,40,30,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    LTEXT           "www.soulride.com",IDC_STATIC,40,40,101,8
+END
+
+IDD_FORMVIEW DIALOG DISCARDABLE  0, 0, 122, 153
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Grid"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GRIDXSIZE,50,40,35,13,ES_AUTOHSCROLL
+    LTEXT           "X Size (width)",IDC_STATIC,5,40,44,10
+    EDITTEXT        IDC_GRIDZSIZE,50,55,35,12,ES_AUTOHSCROLL
+    LTEXT           "Z Size (height)",IDC_STATIC,5,55,45,12
+    CONTROL         "Slider1",IDC_GRIDSCALE,"msctls_trackbar32",TBS_BOTH | 
+                    WS_TABSTOP,30,70,63,23
+    LTEXT           "Scale",IDC_STATIC,5,75,20,12
+    EDITTEXT        IDC_GRIDXORIGIN,50,5,35,13,ES_AUTOHSCROLL
+    LTEXT           "X Origin",IDC_STATIC,5,5,45,14
+    EDITTEXT        IDC_GRIDZORIGIN,50,20,35,12,ES_AUTOHSCROLL
+    LTEXT           "Z Origin",IDC_STATIC,5,20,44,13
+    DEFPUSHBUTTON   "Apply",IDC_APPLYGRIDFORM,20,95,46,16
+    PUSHBUTTON      "Export",IDC_PSD_EXPORT,10,125,45,15
+    PUSHBUTTON      "Import",IDC_PSD_IMPORT,65,125,45,15
+    GROUPBOX        "tmpgrid.psd",IDC_STATIC,5,115,110,30
+END
+
+IDD_EXCAVATE DIALOG DISCARDABLE  0, 0, 187, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Excavator tool properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EXCAVATE_WIDTH,35,10,25,12,ES_AUTOHSCROLL
+    CONTROL         "Add/subtract height",IDC_ADDSUBHEIGHT,"Button",
+                    BS_AUTORADIOBUTTON,5,50,85,10
+    CONTROL         "Smoothing (right button sharpens)",IDC_SMOOTHING,"Button",
+                    BS_AUTORADIOBUTTON,5,65,135,10
+    CONTROL         "Flatten (right button gets reference height)",
+                    IDC_CLONEHEIGHT,"Button",BS_AUTORADIOBUTTON,5,86,160,10
+    EDITTEXT        IDC_EXCAVATE_DEPTH,130,46,30,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SMOOTHINGAMOUNT,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,65,75,50,10
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LTEXT           "Radius",IDC_STATIC,5,10,25,10
+    LTEXT           "Edge taper  sloped",IDC_STATIC,5,25,60,10
+    LTEXT           "Depth (m)",IDC_STATIC,95,50,34,10
+    LTEXT           "Amount",IDC_STATIC,15,75,25,10
+    LTEXT           "min",IDC_STATIC,50,75,15,10
+    LTEXT           "max",IDC_STATIC,115,75,15,10
+    CONTROL         "Slider1",IDC_EDGETAPER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,65,25,45,10
+    LTEXT           "flat",IDC_STATIC,110,25,15,10
+    CONTROL         "Deresolve (reduce the resolution of height data)",
+                    IDC_DERESOLVE,"Button",BS_AUTORADIOBUTTON,5,100,180,10
+    CONTROL         "Bitmap Modulate",IDC_BITMAP_MODULATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,118,70,10
+    EDITTEXT        IDC_BITMAP_NAME,75,117,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BITMAP_BROWSE,159,117,20,13
+END
+
+IDD_OBJECTPROPERTIES DIALOG DISCARDABLE  0, 0, 122, 153
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Object"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Type",IDC_STATIC,5,5,20,10
+    COMBOBOX        IDC_COMBO_OBJECTTYPE,25,5,90,90,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Location",IDC_STATIC,40,50,30,10
+    LTEXT           "x",IDC_STATIC,75,50,10,10
+    EDITTEXT        IDC_OBJECTX,85,50,30,12,ES_AUTOHSCROLL
+    LTEXT           "y",IDC_STATIC,75,62,10,10
+    EDITTEXT        IDC_OBJECTY,85,62,30,12,ES_AUTOHSCROLL
+    LTEXT           "z",IDC_STATIC,75,76,10,10
+    EDITTEXT        IDC_OBJECTZ,85,74,30,12,ES_AUTOHSCROLL
+    CONTROL         "Pin to ground",IDC_PINTOGROUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,60,50,10
+    DEFPUSHBUTTON   "Apply",IDC_APPLYOBJECTPROPERTIES,5,70,50,14
+    LTEXT           "Geometry",IDC_STATIC,7,20,32,12
+    COMBOBOX        IDC_COMBO_OBJECTGEOMETRY,45,20,70,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_OBJECTSOLID,45,35,70,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Solid",IDC_STATIC,10,35,32,12
+    CONTROL         "List1",IDC_PROPERTIES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,5,95,115,55
+    LTEXT           "Additional Properties...",IDC_STATIC,5,85,70,10
+END
+
+IDD_TOOL DIALOG DISCARDABLE  0, 0, 102, 171
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Current Tool",IDC_STATIC,5,5,40,10
+    CONTROL         "Edit Grids",IDC_GRIDTOOL,"Button",BS_AUTORADIOBUTTON,5,
+                    15,50,10
+    CONTROL         "Excavate",IDC_EXCAVATE,"Button",BS_AUTORADIOBUTTON,5,25,
+                    60,10
+    CONTROL         "Paint Surface",IDC_PAINTSURFACE,"Button",
+                    BS_AUTORADIOBUTTON,5,35,60,10
+    CONTROL         "Plant Objects",IDC_PLANTOBJECTS,"Button",
+                    BS_AUTORADIOBUTTON,5,45,56,10
+    CONTROL         "Edit Objects",IDC_OBJECTTOOL,"Button",
+                    BS_AUTORADIOBUTTON,5,55,55,10
+    CONTROL         "Edit Vertex",IDC_VERTEX,"Button",BS_AUTORADIOBUTTON,5,
+                    65,55,10
+    CONTROL         "Hand",IDC_HAND,"Button",BS_AUTORADIOBUTTON,5,75,55,10
+    LTEXT           "Display",IDC_STATIC,5,85,30,10
+    CONTROL         "Selected Grids",IDC_DRAW_SELECTED_GRID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,95,60,10
+    CONTROL         "All Grids",IDC_DRAW_ALL_GRIDS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,106,50,10
+    CONTROL         "Objects",IDC_DRAW_OBJECTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,118,50,10
+    CONTROL         "Surface",IDC_DRAW_SURFACE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,130,45,10
+    LTEXT           "Zoom",IDC_STATIC,80,5,20,10
+    CONTROL         "Slider1",IDC_ZOOM,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,15,10,40
+    EDITTEXT        IDC_ZOOM_NUMBER,80,55,20,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Contour",IDC_STATIC,75,70,25,10
+    CONTROL         "Slider1",IDC_CONTOURINTERVAL,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,80,10,
+                    40
+    EDITTEXT        IDC_CONTOUR_NUMBER,80,120,20,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Node count",IDC_NODE_COUNT,5,145,50,10
+    PUSHBUTTON      "Cleanup",IDC_CLEANUP_QUADTREE,65,140,35,15
+    CONTROL         "Show tool cursor",IDC_SHOW_TOOL_CURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,160,80,10
+END
+
+IDD_GEOMETRY_DIALOG DIALOG DISCARDABLE  0, 0, 122, 153
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Geometry"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "New...",IDC_ADD_NEW_GEOMETRY,5,130,30,15
+    PUSHBUTTON      "Delete",IDC_DELETE_GEOMETRY,75,130,30,15
+    PUSHBUTTON      "Edit...",IDC_EDIT_GEOMETRY,40,130,30,15
+    CONTROL         "List1",IDC_GEOMETRYLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,5,5,115,120
+END
+
+IDD_GEOMETRY_PROPERTIES DIALOG DISCARDABLE  0, 0, 184, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Geometry Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,35,5,145,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FILENAME,35,20,105,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,145,20,35,10
+    EDITTEXT        IDC_COMMENT,35,35,145,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,50,50,14
+    LTEXT           "Name",IDC_STATIC,15,5,20,9
+    LTEXT           "Filename",IDC_STATIC,5,20,30,10
+    LTEXT           "Comment",IDC_STATIC,5,35,30,9
+END
+
+IDD_CONFIRM_DELETE DIALOG DISCARDABLE  0, 0, 184, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm Delete"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LTEXT           "Delete",IDC_STATIC,25,10,22,9
+    EDITTEXT        IDC_ITEM_NAME,55,10,56,11,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "are you sure?",IDC_STATIC,25,25,46,11
+END
+
+IDD_CONFIRM_DELETE_INUSE DIALOG DISCARDABLE  0, 0, 184, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm Delete"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LTEXT           "Geometry",IDC_STATIC,5,10,30,10
+    EDITTEXT        IDC_GEO_NAME,40,10,55,10,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "is in use.  Are you sure you want to",IDC_STATIC,5,25,
+                    120,10
+    LTEXT           "delete it?",IDC_STATIC,5,40,60,10
+END
+
+IDD_SOLID_PROPERTIES DIALOG DISCARDABLE  0, 0, 187, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Solid Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,35,5,145,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMENT,35,65,145,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,80,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,80,50,14
+    LTEXT           "Name",IDC_STATIC,15,5,20,9
+    LTEXT           "Comment",IDC_STATIC,5,65,30,9
+    CONTROL         "Cylinder",IDC_CYLINDER,"Button",BS_AUTORADIOBUTTON,35,
+                    35,40,10
+    CONTROL         "Box",IDC_BOX,"Button",BS_AUTORADIOBUTTON,35,25,35,10
+    EDITTEXT        IDC_X,135,20,40,10,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,175,20,
+                    6,10
+    RTEXT           "Y (Height)",IDC_DIM1,91,35,39,10
+    EDITTEXT        IDC_Y,135,35,40,10,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,175,35,
+                    6,10
+    RTEXT           "X (Length) / Radius",IDC_DIM0,87,20,43,10
+    EDITTEXT        IDC_Z,135,50,40,10,ES_AUTOHSCROLL
+    CONTROL         "Spin3",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,175,50,
+                    6,10
+    RTEXT           "Z (Width)",IDC_DIM2,95,50,35,10
+END
+
+IDD_SOLID_DIALOG DIALOG DISCARDABLE  0, 0, 122, 153
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Solids"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "New...",IDC_ADD_NEW_SOLID,5,131,30,15
+    PUSHBUTTON      "Delete",IDC_DELETE_SOLID,75,131,30,15
+    PUSHBUTTON      "Edit...",IDC_EDIT_SOLID,40,131,30,15
+    CONTROL         "List1",IDC_SOLIDLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,5,5,115,120
+END
+
+IDD_SELECTBYATTR DIALOG DISCARDABLE  0, 0, 194, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Objects By Attribute"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "For all objects which...",IDC_STATIC,5,5,75,8
+    PUSHBUTTON      "Select",IDC_SELECT,5,120,40,15
+    PUSHBUTTON      "Deselect",IDC_DESELECT,50,120,40,15
+    PUSHBUTTON      "Clear Selection",IDC_CLEAR,60,145,50,15
+    PUSHBUTTON      "Done",IDOK,115,145,40,15
+    LTEXT           "do",IDC_STATIC,15,20,10,10
+    CONTROL         "not",IDC_NOTTYPE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    30,20,25,10
+    LTEXT           "have Type",IDC_STATIC,55,20,35,10
+    COMBOBOX        IDC_COMBO_OBJECTTYPE,95,20,95,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "do",IDC_STATIC,15,40,10,10
+    CONTROL         "not",IDC_NOTGEOMETRY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,30,40,25,10
+    LTEXT           "have Geometry",IDC_STATIC,55,40,50,10
+    COMBOBOX        IDC_COMBO_OBJECTGEOMETRY,105,40,85,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "do",IDC_STATIC,15,60,10,10
+    CONTROL         "not",IDC_NOTSOLID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    30,60,25,10
+    LTEXT           "have Solid",IDC_STATIC,55,60,50,10
+    COMBOBOX        IDC_COMBO_OBJECTSOLID,105,60,85,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "AND",IDC_STATIC,5,30,25,10
+    LTEXT           "AND",IDC_STATIC,5,50,20,10
+    LTEXT           "AND",IDC_STATIC,5,70,20,10
+    CONTROL         "have Pin To Ground",IDC_PIN,"Button",BS_AUTO3STATE | 
+                    BS_LEFTTEXT | WS_TABSTOP,15,80,75,10
+    CONTROL         "Slider1",IDC_RANDOMMASK,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,21,95,75,10
+    CTEXT           "random mask",IDC_STATIC,25,105,70,10
+    RTEXT           "0%",IDC_STATIC,5,95,15,10
+    LTEXT           "100%",IDC_STATIC,95,95,20,10
+END
+
+IDD_PLANT_PARAMETERS DIALOG DISCARDABLE  0, 0, 129, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Planting Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,140,50,14
+    LTEXT           "Type",IDC_STATIC,5,5,25,10
+    COMBOBOX        IDC_OBJECTTYPE,30,5,80,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Geometry",IDC_STATIC,5,20,35,10
+    LTEXT           "Solid",IDC_STATIC,5,35,30,10
+    COMBOBOX        IDC_OBJECTGEOMETRY,45,20,65,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OBJECTSOLID,45,35,65,45,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Y Value",IDC_STATIC,5,50,35,10
+    EDITTEXT        IDC_OBJECTY,45,50,30,10,ES_AUTOHSCROLL
+    CONTROL         "Pin to ground",IDC_PINTOGROUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,65,50,10
+    GROUPBOX        "Spray Options",IDC_STATIC,5,85,120,50
+    CONTROL         "Enable spray",IDC_ENABLESPRAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,95,50,10
+    LTEXT           "Radius",IDC_STATIC,10,110,25,10
+    EDITTEXT        IDC_RADIUS,35,110,25,10,ES_AUTOHSCROLL
+    LTEXT           "Density",IDC_STATIC,10,120,25,10
+    EDITTEXT        IDC_DENSITY,35,120,25,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ERASEPERCENT,100,110,25,10,ES_AUTOHSCROLL
+    LTEXT           "Erase %\n(r button)",IDC_STATIC,70,110,30,20
+END
+
+IDD_GRID_PROCESSING DIALOGEX 0, 0, 187, 217
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grid Processing"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Spline Smoothing",IDC_STATIC,5,20,175,55
+    PUSHBUTTON      "Do it!",IDC_BUTTON2,135,55,40,15
+    LTEXT           "Adjusts the contents of a high-resolution grid, in order to create a smooth spline surface between the coarser underlying grid points.",
+                    IDC_STATIC,10,30,95,40
+    LTEXT           "Operations available on the currently selected grid:",
+                    IDC_STATIC,5,5,160,10
+    PUSHBUTTON      "Do it!",IDC_BUTTON3,135,80,40,15
+    GROUPBOX        "Taper edges",IDC_STATIC,5,95,175,30
+    PUSHBUTTON      "Do it!",IDC_BUTTON4,135,105,40,15
+    EDITTEXT        IDC_EDIT1,100,105,25,10,ES_AUTOHSCROLL
+    LTEXT           "Size of taper (in grid points)",IDC_STATIC,10,105,85,10
+    GROUPBOX        "Add random bumps",IDC_STATIC,5,130,175,55
+    LTEXT           "Clear (flatten) the grid",IDC_STATIC,65,80,65,10
+    LTEXT           "Radius",IDC_STATIC,10,140,25,10,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT2,40,140,20,10,ES_AUTOHSCROLL
+    LTEXT           "Height (m)",IDC_STATIC,60,140,35,10,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT3,95,140,20,10,ES_AUTOHSCROLL
+    LTEXT           "Count",IDC_STATIC,125,140,20,10,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT4,150,140,20,10,ES_AUTOHSCROLL
+    LTEXT           "variance",IDC_STATIC,10,150,30,10
+    EDITTEXT        IDC_EDIT5,40,150,20,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,95,150,20,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,150,150,20,10,ES_AUTOHSCROLL
+    LTEXT           "variance",IDC_STATIC,65,150,30,10
+    LTEXT           "variance",IDC_STATIC,120,150,30,10
+    PUSHBUTTON      "Do it!",IDC_BUTTON5,135,165,40,15
+    GROUPBOX        "Perlin noise?",IDC_STATIC,5,190,175,20
+END
+
+IDD_PROP_EDIT_INT DIALOG DISCARDABLE  0, 0, 104, 37
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Integer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,50,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,50,20,50,14
+    EDITTEXT        IDC_INT,5,5,35,10,ES_AUTOHSCROLL
+END
+
+IDD_PROP_EDIT_STRING DIALOG DISCARDABLE  0, 0, 182, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit String"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,25,50,14
+    EDITTEXT        IDC_STRING,5,5,115,35,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+END
+
+IDD_PROP_EDIT_ORIENTATION DIALOG DISCARDABLE  0, 0, 187, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Orientation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    EDITTEXT        IDC_YAW,75,65,30,10,ES_AUTOHSCROLL
+    LTEXT           "Yaw Angle (Degrees)",IDC_STATIC,5,65,70,10
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,105,65,
+                    10,10
+    LTEXT           "0",IDC_STATIC,55,25,8,10
+    LTEXT           "90",IDC_STATIC,30,0,10,10
+    LTEXT           "180",IDC_STATIC,5,25,10,10
+    LTEXT           "270",IDC_STATIC,30,45,10,10
+END
+
+IDD_OFFSET_PARAMS DIALOG DISCARDABLE  0, 0, 184, 62
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Offset Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_X,50,30,35,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Z,50,45,35,10,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Offset",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LTEXT           "Offset all grids, objects, and polygons\nby a fixed amount:",
+                    IDC_STATIC,7,7,112,21
+    LTEXT           "X (+ is East)",IDC_STATIC,5,30,40,10
+    LTEXT           "Z (+ is South)",IDC_STATIC,5,45,40,10
+END
+
+IDD_PAINT_PARAMETERS DIALOG DISCARDABLE  0, 0, 122, 154
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Paint"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PAINT_RADIUS,5,10,35,10,ES_AUTOHSCROLL
+    LTEXT           "Brush radius (grid points)",IDC_STATIC,5,0,80,10
+    CONTROL         "",IDC_PALETTE,"Static",SS_BLACKFRAME,5,35,115,115
+    PUSHBUTTON      "Apply",IDC_SETRADIUS,45,10,30,10
+    LTEXT           "Surface Type Palette",IDC_STATIC,5,25,80,10
+END
+
+IDD_POLYPROPERTIES DIALOG DISCARDABLE  0, 0, 122, 153
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Polygon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Closed",IDC_CLOSED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,5,50,10
+    DEFPUSHBUTTON   "Apply",IDC_APPLYPOLYPROPERTIES,5,15,50,14
+    CONTROL         "List1",IDC_PROPERTIES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,5,45,115,105
+    LTEXT           "Additional Properties...",-1,5,35,70,10
+END
+
+IDD_PROP_EDIT_MULTILINE_STRING DIALOG DISCARDABLE  0, 0, 212, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Multi-Line String"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,130,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,130,50,14
+    EDITTEXT        IDC_STRING,5,5,200,120,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Slingshot\0"
+            VALUE "FileDescription", "Shreditor - Soul Ride Terrain Editor MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Shreditor\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998 Slingshot\0"
+            VALUE "OriginalFilename", "shreditor.EXE\0"
+            VALUE "ProductName", "Shreditor - Soul Ride Terrain Editor Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_EXCAVATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_OBJECTPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_TOOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 95
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_GEOMETRY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_GEOMETRY_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_CONFIRM_DELETE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    IDD_CONFIRM_DELETE_INUSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_SOLID_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_SOLID_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_SELECTBYATTR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_PLANT_PARAMETERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_GRID_PROCESSING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_PROP_EDIT_INT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 97
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 30
+    END
+
+    IDD_PROP_EDIT_STRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_PROP_EDIT_ORIENTATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_OFFSET_PARAMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PAINT_PARAMETERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_POLYPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_PROP_EDIT_MULTILINE_STRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Shreditor"
+    IDR_TERRAITYPE          "Terrain\nTerrain\nTerrain\n\n\nTerrain.Document\nTerrain Document"
+    IDR_OBJECTEDIT          "Object\nTerrain\n\n\n\nTerrain.Document\nTerrain Document"
+    IDR_GRIDTYPE            "\nGrid\nGrid\n\n\nGrid.Document\nGrid Document"
+    IDR_GEOMETRYLIST        "Geometry List\nTerrain\n\n\n\nTerrain.Document\nTerrain Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Shreditor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ZOOM_TERRAIN         "Zoom terrain view in\nZoom View In"
+    ID_ZOOM_TERRAIN_OUT     "Zoom terrain view out\nZoom View Out"
+    ID_ZOOM_TERRAIN_IN      "Zoom terrain view in\nZoom View In"
+    ID_ADD_NEW_GRID         "Add a new, empty grid to the terrain"
+    ID_NEW_GRID             "Add a new grid to the terrain\nAdd a new grid"
+    ID_EXCAVATE             "Edit the properties of the excavation tool"
+    ID_GRIDDOUBLEHEIGHT     "Double the height of the topography in this grid"
+    ID_GRIDHALVEHEIGHT      "Halve the height of the topography in this grid"
+    ID_ADD_NEW_POLYGON      "Add a new surface polygon to the terrain\nAdd a new polygon"
+    ID_VIEW_TERRAIN         "View the terrain window"
+    ID_VIEW_GEOMETRY_LIST   "View the geometry list"
+    ID_VIEW_OBJECT_PROPERTIES "View object properties"
+    ID_EDIT_DELETE          "Delete Selected Objects"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OBJECT_PLANTPARAMETERS "Adjust parameters of the Planting Tool"
+    ID_EDIT_OFFSET          "Offset the coordinates of everything"
+    ID_FILE_LOAD_INTO_CURRENT 
+                            "Combine the contents of a file with the current terrain"
+    IDC_GENERATE_TYPEMAPS   "Automatically generate surface type information"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\terrain.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
